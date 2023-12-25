@@ -14,7 +14,40 @@
     <p>Here We'll learn basic stuff of Get started with PHP</p>
     <?php
     /*This is the multiline Comment */
-    echo "<h1>This is the basic echo tag for php</h1>";
+    // echo "<h1>This is the basic echo tag for php</h1>";
+
+    //Variables
+    $x= 3208;
+    $name = "Muhammad Nabeel<br>";
+    echo $name;
+    // echo $x;
+    //Scalar DatTypes
+    $string = "Hey, This is the first string value";
+    $int = 12;
+    $float = 0.2389;
+    $sum= $float + $int;
+    $bool= true;
+    echo "This is the combination of String ". $string." and float,int values sums is ". $sum;
+
+    // Array DataTypes
+    /*
+    We have 2 methods for declaring arrays
+    1st method   */
+    $nameArray= array("Nabeel", "Aqeel", "Israr", "Shahroz");
+    // 2nd method
+    $carArray = ["Tesla", "Honda", "KIA", "MG"];
+    echo"<br>". $carArray[1];
+    echo"<br>". $nameArray[2];
+
+    // $names = "";
+    // $array = [];
+    // $bool = false;
+    // $object = null;
+
+    //Objects
+    // $Car = "Honda Civic";
+    // $object = new $Car();
+
     ?>
 </body>
 </html>
