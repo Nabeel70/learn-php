@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+    //This line of code will help us to auto refresh the Webpage in Browser
+    header("refresh:1; ");
+     ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning PHP 2023-24</title>
 </head>
 <body>
-    <h1>Hi, I'm going to learn PHP again,(hihihihihi)</h1>
-    <p>But I'm pretty Confident that this time I'll make an impact and will get a job Insh-Allah </p>
+    <h1>Basics of PHP</h1>
+    <p>Here We'll learn basic stuff of Get started with PHP</p>
     <?php
     /*This is the multiline Comment */
     echo "<h1>This is the basic echo tag for php</h1>";
