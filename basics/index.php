@@ -8,9 +8,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning PHP 2023-24</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Basics of PHP</h1>
+    <h1 class="para">Basics of PHP</h1>
     <p>Here We'll learn basic stuff of Get started with PHP</p>
     <?php
     /*This is the multiline Comment */
@@ -48,6 +49,20 @@
     // $Car = "Honda Civic";
     // $object = new $Car();
 
+
+    //SuperGlobal Variables
+    //These are the variables which is predefined in the language and we can access it anywhere in the code;
+    echo "<p class=para>Global Variables</p>";
+    echo "<br>";
+    echo $_SERVER["DOCUMENT_ROOT"];
+    echo "<br>";
+    echo $_SERVER["PHP_SELF"];
+    echo "<br>";
+    echo $_SERVER["SERVER_NAME"];
+    echo "<br>";
+    echo $_SERVER["REQUEST_METHOD"];
+    echo "<br>";
+    echo $_GET["name"];
     ?>
 </body>
 </html>
