@@ -10,7 +10,7 @@
     <p>But I'm pretty Confident that this time I'll make an impact and will get a job Insh-Allah </p>
     <?php
     /*This is the multiline Comment */
-    echo "<h1>Hi PHP</h1>";
+    echo "<h1>This is the basic echo tag for php</h1>";
     ?>
 </body>
 </html>
