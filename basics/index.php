@@ -62,7 +62,14 @@
     echo "<br>";
     echo $_SERVER["REQUEST_METHOD"];
     echo "<br>";
-    echo $_GET["name"];
+
+    //Create a Session 
+    $_SESSION["username"] = "Nabeel";
+    echo $_SESSION["username"];
+
+    //Environment variable
+    $_ENV["test"]= "testenv";
+    $_ENV["test"];
     ?>
 </body>
 </html>
