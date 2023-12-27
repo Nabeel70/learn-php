@@ -1,4 +1,6 @@
-
+.error-text{
+    color: red;
+}
 .para{
     font-size: 30px;
     color: green;

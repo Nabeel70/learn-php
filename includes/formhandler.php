@@ -1,5 +1,5 @@
 <?php
-var_dump($_SERVER['HTTP_HOST']);
+// var_dump($_SERVER['HTTP_HOST']);
 //Old method
 // if(isset($_POST['submit'])){
 
@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $lastname = htmlspecialchars($_POST['lastname']);
     $pet = htmlspecialchars($_POST['favouritepet']);
 
-
+if(!empty($firstname && $lastname && $pet)){
 
     echo "These are the data that user submited: ";
     echo "<br>";
@@ -22,10 +22,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     echo $lastname;
     echo "<br>";
     echo $pet;
-    // echo "<br>";
-    header("Location: ../form.php");
-    if(empty($firstname)){
-        exit();
-        header("Location: ../index.php");
-    };
+    
+} else {
+    echo "<h5>Please Go Back and fill all the fields in the form first</h5>";
+}
+} else {
+header("Location: ../includes/formhandler.php");
 };
+
