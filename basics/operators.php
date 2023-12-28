@@ -73,6 +73,76 @@ if($x != $y){
     echo $x." is equal to ".$y;
 };
 
+//Logical Operators
+$n = 12;
+$m = 13;
+echo "<br>";
+
+if($n == $m){
+    echo $n." is equal to ".$m;
+}else{
+    echo $n." is not equal to ".$m;
+}
+
+//AND Operator
+
+$n = 12;
+$m = 13;
+
+$o = 32;
+$p = 43;
+
+echo "<br>";
+
+if($n == $m && $o == $p){
+    echo $n." is equal to ".$m. "  And ".$o." is equal to ".$p;
+
+}else{
+    echo $n." is not equal to ".$m. "  And ".$o." is also not equal to ".$p;
+}
+
+// OR Operator
+
+$n = 12;
+$m = 13;
+
+$o = 32;
+$p = 32;
+
+echo "<br>";
+
+if($n == $m || $o == $p){
+    echo $n." is equal to ".$m. "  OR ".$o." is equal to ".$p;
+
+}else{
+    echo $n." is not equal to ".$m. "  OR ".$o." is also not equal to ".$p;
+}
+
+//PreIncreament and PreDecreament Operators
+echo "<br>";
+echo "PreIncreament and PreDecreament Operators";
+echo "<br>";
+$z = 2;
+echo ++$z;
+
+echo "<br>";
+$z = 3;
+echo --$z;
+
+//PostIncreament and PostDecreament Operators
+echo "<br>";
+echo "PostIncreament and PostDecreament Operators";
+echo "<br>";
+$z = 2;
+echo $z++;
+echo "<br>";
+echo $z;
+
+echo "<br>";
+$z = 3;
+echo $z--;
+echo "<br>";
+echo $z;
 ?>
 
 
