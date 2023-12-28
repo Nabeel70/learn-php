@@ -48,27 +48,48 @@
         };
 
         //Calculate the numbers if there's no error
-        if(!$errors){
+    if(!$errors){
             //Declare $val variable so we don't get message in browser
-            $val = 0;
+        $val = 0;
             
-            switch($operator){
-                case "add":
-                    $val = $num1 + $num2;
-                    break;
-                case "subtract":
-                    $val = $num1 - $num2;
-                    break;
-                case "multiply":
-                    $val = $num1 * $num2;
-                    break;
-                case "divide":
-                    $val = $num1 / $num2;
-                    break;
-                default:
-                    echo "Oops! Something went Wrong";     
-            };
-            echo " Results = ". $val. "  .";
+        //We can do it by using IF-ELSE statement
+
+        if($operator == "add"){
+            echo "Results =". $val = $num1 + $num2;
+        }elseif($operator == "subtract")
+            {
+            echo "Results =". $val = $num1 - $num2;
+        }elseif($operator == "multiply")
+            {
+            echo "Results =". $val = $num1 * $num2;
+            }
+        elseif($operator == "divide")
+            {
+            echo "Results =". $val = $num1 / $num2;
+        }else
+            {
+                echo "Oops! Something went Wrong";
+        }
+
+            //We can do it in switch statement as well
+
+        //     switch($operator){
+        //         case "add":
+        //             $val = $num1 + $num2;
+        //             break;
+        //         case "subtract":
+        //             $val = $num1 - $num2;
+        //             break;
+        //         case "multiply":
+        //             $val = $num1 * $num2;
+        //             break;
+        //         case "divide":
+        //             $val = $num1 / $num2;
+        //             break;
+        //         default:
+        //             echo "Oops! Something went Wrong";     
+        //     };
+        //     echo " Results = ". $val. "  .";
         }
 
     };
