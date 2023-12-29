@@ -25,8 +25,20 @@
     //Delete a specific value from the array by using array_splice()  builtin function
     //Here we are deleting value from array 1 to 1
     array_splice($fruits, 1, 1);// We deleted Banana
+    // echo $fruits[1];
 
-    echo $fruits[1];
+    //Create a key and assign it a value by using arrays
+    $tasks = [
+        "Doing Coding" => "Nabeel",
+        "Laundry" => "Israr",
+        "Dusting" => "Shahroz",
+        "Wattering Plants" => "Aqeel"
+    ];
+    //We are fetching data/value by using key like who is doing dusting
+    echo $tasks ["Dusting"];
+
+
+
 
     ?>
 
