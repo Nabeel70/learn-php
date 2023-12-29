@@ -40,6 +40,10 @@
     
 
     //Get all the data in Array
+    // print_r($tasks);
+
+    //Sorting Data in Ascending order
+    sort($tasks);
     print_r($tasks);
 
 
