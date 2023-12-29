@@ -35,9 +35,12 @@
         "Wattering Plants" => "Aqeel"
     ];
     //We are fetching data/value by using key like who is doing dusting
-    echo $tasks ["Dusting"];
+    // echo $tasks ["Dusting"];
 
+    
 
+    //Get all the data in Array
+    print_r($tasks);
 
 
     ?>
