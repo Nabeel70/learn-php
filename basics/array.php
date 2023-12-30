@@ -47,12 +47,16 @@
     // print_r($tasks);
 
     //push the data in the end of the simple array
-    array_push($fruits, "Mango");
+    // array_push($fruits, "Mango");
     // print_r($fruits);
 
     //Push the data in the end of the assiosiated array
     $tasks["Washing"] = "Austin";
-    print_r($tasks);
+    // print_r($tasks);
+
+    //Inserting the data in specific index
+    array_splice($fruits, 1,0, "Watermelon");
+    print_r($fruits);
 
 
     ?>
