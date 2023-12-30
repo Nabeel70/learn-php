@@ -43,7 +43,15 @@
     // print_r($tasks);
 
     //Sorting Data in Ascending order
-    sort($tasks);
+    // sort($tasks);
+    // print_r($tasks);
+
+    //push the data in the end of the simple array
+    array_push($fruits, "Mango");
+    // print_r($fruits);
+
+    //Push the data in the end of the assiosiated array
+    $tasks["Washing"] = "Austin";
     print_r($tasks);
 
 
