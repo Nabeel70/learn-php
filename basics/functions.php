@@ -65,8 +65,39 @@
     //Get random number between a numbers(It
     // is using to reload images when we refresh a website)
     echo rand(1, 100);
+    echo "<br>";
 
+    /*Array 
+    functions*/
 
+    //Count the data in array 
+    $array = ["Phones", "TV", "Computers", "Tablets"];
+    echo count($array);
+    echo "<br>";
+
+    //Check weather it's an array or not
+    echo is_array($array); //output should be 1(means True)
+    echo "<br>";
+
+    //Array Push and pop functions for add or delete data from arrays
+    $countries = ["pakistan", "UK", "USA", "Qatar", "Kuwait", "Saudi-Arabia"];
+    array_push($countries, "Canada");
+    print_r($countries);
+    echo "<br>";
+
+    array_pop($countries);
+    print_r($countries);
+    echo "<br>";
+
+    //Reverse arrays
+    print_r(array_reverse($countries));
+    echo "<br>";
+
+    //Merging arrays in each others
+    print_r(array_merge($array, $countries));
+    echo "<br>";
+
+    
     ?>
 </body>
 </html>
