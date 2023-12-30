@@ -97,7 +97,15 @@
     print_r(array_merge($array, $countries));
     echo "<br>";
 
+    //DatTime Functions
+    echo date("H:i:s d-m-Y");
+    echo "<br>";
     
+    $today = date("F j, Y,  g:i:a");
+    echo $today;
+
+
+
     ?>
 </body>
 </html>
