@@ -60,8 +60,29 @@
 
     //Merge one array in to another array
     $vagetables = ["Carrot", "Ladyfinger", "Onion"];
-    array_splice( $fruits,0, 0, $vagetables); 
-    print_r($fruits);
+    // array_splice( $fruits,0, 0, $vagetables); 
+    // print_r($fruits);
+
+
+    /* Multidimentional Arrays
+    Array wihin an array
+    */
+
+    $electronics = [
+        "Mobile Devices",
+        array(
+            "Apple phones",
+             "Samsung phones",
+              "Vivo phones"),
+        "Computers",
+        "Laptops",
+        "Cameras",
+        "Refrigerators"
+    ];
+
+    //Now here we will access Vivo phones by refering to it's index
+    echo $electronics[1] [2];
+
 
     ?>
 
