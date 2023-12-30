@@ -42,6 +42,29 @@
     //Explode the string or add something between characters of string
     $string4 = "Th is is t he test str ing for explode function";
     print_r(explode(" ", $string4));
+    echo "<br>";
+
+    //Get absolute value of certain function
+    $number = -5.5;
+    echo abs($number);
+    echo "<br>";
+
+    //Round off value function 
+    $number1 = 23.5;
+    echo round($number1);
+    echo "<br>";
+
+    //Exponential power function
+    echo pow( 2, 5);
+    echo "<br>";
+
+    //square root of a number
+    echo sqrt(39);
+    echo "<br>";
+
+    //Get random number between a numbers(It
+    // is using to reload images when we refresh a website)
+    echo rand(1, 100);
 
 
     ?>
