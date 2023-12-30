@@ -67,7 +67,6 @@
     /* Multidimentional Arrays
     Array wihin an array
     */
-
     $electronics = [
         "Mobile Devices",
         array(
@@ -81,8 +80,26 @@
     ];
 
     //Now here we will access Vivo phones by refering to it's index
-    echo $electronics[1] [2];
+    // echo $electronics[1] [2];
 
+      /* Assiosiates arrays
+    arrays wihin an array
+    */
+    $food = [
+        "Vegetables" => array("Carrot", "Ladyfinger", "Onion"),
+        "Fruits" => array("Apple", "Banana", "Pineapple", "Cherry"),
+        "electronics" => array("Mobile Devices",
+        array(
+            "Apple phones",
+             "Samsung phones",
+              "Vivo phones"),
+        "Computers",
+        "Laptops",
+        "Cameras",
+        "Refrigerators")
+    ];
+
+    echo $food["electronics"][1][0];
 
     ?>
 
