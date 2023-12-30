@@ -55,9 +55,13 @@
     // print_r($tasks);
 
     //Inserting the data in specific index
-    array_splice($fruits, 1,0, "Watermelon");
-    print_r($fruits);
+    // array_splice($fruits, 1,0, "Watermelon");
+    // print_r($fruits);
 
+    //Merge one array in to another array
+    $vagetables = ["Carrot", "Ladyfinger", "Onion"];
+    array_splice( $fruits,0, 0, $vagetables); 
+    print_r($fruits);
 
     ?>
 
