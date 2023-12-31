@@ -49,6 +49,26 @@
     echo staticFunction();
     echo "<br>";
     echo staticFunction();
+    echo "<br>";
+
+
+
+    //Class Scope in PHP
+    class myClass
+    {
+        //Define a class variable(By using static we can access it outside the class scope)
+        static public $testvari = "This value is inside a class variable";
+
+        //Define a class method
+        public function testfunction()
+        {
+            //Use the class variable
+            echo $this-> testvari;
+
+        }
+    };
+    echo myClass::$testvari;
+
 
     ?>
     
