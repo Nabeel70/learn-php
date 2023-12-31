@@ -22,7 +22,7 @@
         echo "Hi I'm ".$firstName ." ". $lastName ."<br> 
         My favourite car is ". $fvrtCar;
     }
-    intro("Nabeel", "Amin", "Tesla");
+    // intro("Nabeel", "Amin", "Tesla");
 
     //Give a default value to parameter and then change it during return the function
     function testIt($name = "Green") {
@@ -39,9 +39,29 @@
     function declr(string $name = "Green") {
         echo "Test string " . $name;
     }
-    return declr();
-    // return testIt("Green and White");
+    // return declr();
+    echo "<br>";
 
+     /*  Perform Calculator things by using user defined functions*/
+     function calculator( int $num1, int $num2){
+        $results = $num1 + $num2;
+        return $results;
+     }
+     $results = calculator(10, 40);
+    //  echo $results;
+     echo "<br>";
+
+     //Scope and Global Variables concepts
+
+     $check = " check variable";
+     function checkit(){
+        //use this global variable to access $check variable inside this function
+        global $check;
+        // echo "Checking to get global variables";
+        return $check;
+     }
+
+     echo checkit();
 
     ?>
 </body>
