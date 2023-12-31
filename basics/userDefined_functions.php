@@ -1,3 +1,6 @@
+<?php
+ declare(strict_types=1);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,8 +28,20 @@
     function testIt($name = "Green") {
         echo "Pakistan flag color is " . $name;
     }
-    return testIt();
+    // return testIt();
+
     // return testIt("Green and White");
+
+
+    /*  Typed Declaration (Restrict user to have specific type value)*/
+
+    echo "<br>";
+    function declr(string $name = "Green") {
+        echo "Test string " . $name;
+    }
+    return declr();
+    // return testIt("Green and White");
+
 
     ?>
 </body>
