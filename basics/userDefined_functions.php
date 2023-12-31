@@ -21,6 +21,13 @@
     }
     intro("Nabeel", "Amin", "Tesla");
 
+    //Give a default value to parameter and then change it during return the function
+    function testIt($name = "Green") {
+        echo "Pakistan flag color is " . $name;
+    }
+    return testIt();
+    // return testIt("Green and White");
+
     ?>
 </body>
 </html>
