@@ -11,8 +11,15 @@
         echo "Hello My function";
     }
 
-    return sayHello();
+    // return sayHello();
 
+    //Passing parameters inside functions
+
+    function intro($firstName, $lastName, $fvrtCar){
+        echo "Hi I'm ".$firstName ." ". $lastName ."<br> 
+        My favourite car is ". $fvrtCar;
+    }
+    intro("Nabeel", "Amin", "Tesla");
 
     ?>
 </body>
