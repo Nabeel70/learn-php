@@ -21,10 +21,17 @@
     $bolean = true;
     while($bolean){
          echo $bolean ."<br>";
-         echo $bolean;
+         echo $bolean."<br>";
          $bolean = false;
-
     }
+
+    //Checking varibale value in while loop
+    $test = 5;
+    while ($test<10){
+        echo $test."<br>";
+        $test++;
+    }
+    
     
     ?>
     
