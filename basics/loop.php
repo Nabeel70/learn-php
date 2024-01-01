@@ -18,7 +18,7 @@
     }
 
     //While loop
-    
+
     // $bolean = true;
     // while($bolean){
     //      echo $bolean ."<br>";
@@ -37,7 +37,7 @@
     do{
         echo $test,"<br>";
         $test--;
-    }while($test>=0);
+    }while($test>=10);
     
     ?>
     
