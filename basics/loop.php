@@ -50,6 +50,11 @@
     foreach ($fruits as $fruit  => $color) {
         echo "This is ".$fruit." That has a color of ".$color. "<br>";
     }
+       //Another example of For-each Loop in an Associate array
+       $fruits = array("Apple" => "Red", "Orange" => "Orange", "Banana" => "Yellow");
+       foreach ($fruits as $phal  => $rang) {
+           echo "This is ".$phal." That has a color of ".$rang. "<br>";
+       }
 
     ?>
     
