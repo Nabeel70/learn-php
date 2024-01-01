@@ -20,6 +20,7 @@
     //While loop
     $bolean = true;
     while($bolean){
+         echo $bolean ."<br>";
          echo $bolean;
          $bolean = false;
 
