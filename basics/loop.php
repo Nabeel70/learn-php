@@ -32,6 +32,11 @@
         $test++;
     }
     
+    //Do-While loop
+    do{
+        echo $test,"<br>";
+        $test--;
+    }while($test>=0);
     
     ?>
     
