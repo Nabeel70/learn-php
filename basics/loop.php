@@ -17,6 +17,13 @@
         echo "Itration no ... ".$v."<br>";
     }
 
+    //While loop
+    $bolean = true;
+    while($bolean){
+         echo $bolean;
+         $bolean = false;
+
+    }
     
     ?>
     
