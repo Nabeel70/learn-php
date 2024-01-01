@@ -45,6 +45,12 @@
         echo "This is ".$fruit. "<br>";
     }
     
+    //For-each Loop in an Associate array
+    $fruits = ["Apple" => "Red", "Orange" => "Orange", "Banana" => "Yellow"];
+    foreach ($fruits as $fruit  => $color) {
+        echo "This is ".$fruit." That has a color of ".$color. "<br>";
+    }
+
     ?>
     
 </body>
