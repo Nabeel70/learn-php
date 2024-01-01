@@ -34,10 +34,16 @@
     // }
 
     //Do-While loop
-    do{
-        echo $test,"<br>";
-        $test--;
-    }while($test>=10);
+    // do{
+    //     echo $test,"<br>";
+    //     $test--;
+    // }while($test>=10);
+
+    //For-each Loop in index array
+    $fruits = ["Apple", "Orange", "Banana"];
+    foreach ($fruits as $fruit){
+        echo "This is ".$fruit. "<br>";
+    }
     
     ?>
     
