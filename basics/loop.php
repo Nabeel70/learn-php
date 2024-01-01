@@ -9,7 +9,12 @@
     <?php
     //For loop
     for($i = 0; $i<=5; $i++){
-        echo "Hi there..!<br>";
+        echo "Hi there..! ".$i."<br>";
+    }
+    //For loop with variable values
+    $var = 10;
+    for($v=0; $v<= $var; $v++){
+        echo "Itration no ... ".$v."<br>";
     }
 
     
