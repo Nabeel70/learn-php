@@ -3,3 +3,4 @@ INSERT INTO users (username, pwd, email) VALUES
 INSERT INTO users (username, pwd, email) VALUES 
 ('Aqeel', 'admin', 'admin123@gmail.com');
 UPDATE users SET username = 'Muhammad Aqeel', email = 'admin456@gmail.com WHERE id = 2;
+DELETE from users WHERE id = 2;
