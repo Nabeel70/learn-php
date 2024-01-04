@@ -7,3 +7,4 @@ DELETE from users WHERE id = 2;
 INSERT INTO comments (username, comment_text, user_id) VALUES 
 ('Muhammad Nabeel Amin', 'Hi, This is a Test Comment', 1);
 SELECT username, email FROM users WHERE id = 1;
+SELECT username, comment_text FROM comments WHERE user_id = 1;
