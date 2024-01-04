@@ -10,3 +10,4 @@ SELECT username, email FROM users WHERE id = 1;
 SELECT username, comment_text FROM comments WHERE user_id = 1;
 SELECT * FROM comments WHERE user_id = 1;
 SELECT * FROM users INNER JOIN comments ON users.id = comments.user_id;
+SELECT * FROM users LEFT JOIN comments ON users.id = comments.user_id;
