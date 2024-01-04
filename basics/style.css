@@ -5,3 +5,17 @@
     font-size: 30px;
     color: green;
 }
+h3{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+form input{
+    background-color: aquamarine;
+}
+button{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10%;
+}
