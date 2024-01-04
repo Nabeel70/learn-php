@@ -11,10 +11,11 @@ h3{
 form{
     text-align: center;
 }
-form input{
+form input[type= button]{
     background-color: aquamarine;
 }
-button{
+.btn-signup{
+    cursor: pointer !important;
     background-color: black;
     color: aliceblue;
     border-radius: 10%;

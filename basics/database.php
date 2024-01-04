@@ -13,7 +13,7 @@
         <input type="text" name="username" placeholder="Username"><br/><br/>
         <input type="password" name="pwd" placeholder="Password"><br/><br/>
         <input type="text" name="email" placeholder="Email"><br/><br/>
-        <button>Signup</button>
+        <button class="btn-signup">Signup</button>
     </form>
    
 </body>
