@@ -10,7 +10,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         require_once "dbh.inc.php";
 
         $query = "INSERT INTO username (username, pwd, email) 
-        VALUES($username, $pwd, $email);";
+        VALUES(?, ?, ?);";
+
+        $stmt = $pdo ->prepare($query);
+
+        $stmt->execute([$username,$password, $email]);
+        
 
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
