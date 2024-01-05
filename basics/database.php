@@ -10,9 +10,9 @@
     <h3 class="signup">Signup</h3>
 
     <form action="../includes/formhandler.inc.php" method="post">
-        <input type="text" name="username" placeholder="Username"><br/><br/>
-        <input type="password" name="pwd" placeholder="Password"><br/><br/>
-        <input type="text" name="email" placeholder="Email"><br/><br/>
+        <input type="text" name="usernme" placeholder="Username">
+         <input type="password" name="pwd" placeholder="Password">
+        <input type="text" name="email" placeholder="Email">
         <button class="btn-signup">Signup</button>
     </form>
    

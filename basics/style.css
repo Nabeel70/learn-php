@@ -12,15 +12,24 @@ h3{
     text-align: center;
 }
 form{
+    display:block;
+    justify-content: space-between;
+    padding: 10px 0;
     text-align: center;
+    white-space: pre;
 }
-form input[type= button]{
-    border-radius: 20%;
+form input{
+    margin-top: 10px;
+    border-radius: 5%;
+    white-space: pre;
     background-color: aquamarine;
 }
 .btn-signup{
+    white-space: pre;
     cursor: pointer !important;
     background-color: black;
     color: aliceblue;
     border-radius: 10%;
+    margin-top: 10px;
+    padding: 0.30%;
 }

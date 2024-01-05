@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt = $pdo ->prepare($query);
 
         $stmt->bindParam(":username", $username);
-        $stmt->bindParam(":pwd", $pwd);
+        $stmt->bindParam(":pwd", $password);
         $stmt->bindParam(":email", $email);
 
         $stmt->execute();
@@ -37,17 +37,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         exit();
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
-    }
-
-    if(!empty($username && $password && $email)){
-        echo "These are the data that user submited: ";
-        echo "<br>";
-        echo $username;
-        echo "<br>";
-        echo $email;
-        echo "<br>";
-    } else{
-        echo "<h5>Please Go Back and fill all the fields in the form first</h5>";
     }
 
 } else{
