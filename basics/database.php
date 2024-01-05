@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Signup</h3>
+    <h3 class="signup">Signup</h3>
 
     <form action="../includes/formhandler.inc.php" method="post">
         <input type="text" name="username" placeholder="Username"><br/><br/>

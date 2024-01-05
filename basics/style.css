@@ -1,3 +1,6 @@
+body{
+    font-family: cursive;
+}
 .error-text{
     color: red;
 }
@@ -12,6 +15,7 @@ form{
     text-align: center;
 }
 form input[type= button]{
+    border-radius: 20%;
     background-color: aquamarine;
 }
 .btn-signup{
