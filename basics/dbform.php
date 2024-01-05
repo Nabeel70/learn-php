@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3 class="signup">Change Account</h3>
+    <h3 class="signup">Update Account</h3>
 
     <form action="../includes/userupdate.inc.php" method="post">
-        <input type="text" name="usernme" placeholder="Username">
+        <input type="text" name="username" placeholder="Username">
          <input type="password" name="pwd" placeholder="Password">
         <input type="text" name="email" placeholder="Email">
         <button class="btn-signup">Update</button>

@@ -9,17 +9,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     try {
         require_once "dbh.inc.php";
 
-        //prepare parameters
-        // $query = "INSERT INTO users (username, pwd, email) 
-        // VALUES(?, ?, ?);";
-
-        // $stmt = $pdo ->prepare($query);
-
-        // $stmt->execute([$username,$password, $email]);
-
         //Named parameters
-        $query = "INSERT INTO users (username, pwd, email) 
-        VALUES(:username, :pwd, :email);";
+        $query = "UPDATE users SET username = :username, pwd = :pwd, email = :email WHERE id = 5;";
 
         $stmt = $pdo ->prepare($query);
 
@@ -32,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         //Close the PDO connection
         $pdo = null;
         $stmt = null;
-        header("Location:../../../learn-php/basics/database.php");
+        header("Location:../../../learn-php/basics/dbform.php");
 
         exit();
     } catch (PDOException $e) {
@@ -40,5 +31,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
 } else{
-    header("Location:../../../learn-php/basics/database.php");
+    header("Location:../../../learn-php/basics/dbform.php");
 }
