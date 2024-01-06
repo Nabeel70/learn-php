@@ -42,6 +42,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+<section>
     <h3>Search Results: </h3>
 
     <?php
@@ -51,12 +53,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "</div>";
     }else{
         foreach($results as $row){
-            echo htmlspecialchars($row["username"]);
-            echo htmlspecialchars($row["comment_text"]);
-            echo htmlspecialchars($row["created_at"]);
+            echo "<div>";
+            echo "<h4>". htmlspecialchars($row["username"]). "</h4>";
+            echo "<p>". htmlspecialchars($row["comment_text"]). "</p>";
+            echo "<h4>". htmlspecialchars($row["created_at"])."</h4>";
+            echo "</div>";
         }
     };
 
     ?>
+
+</section>
 </body>
 </html>
