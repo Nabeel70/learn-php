@@ -2,6 +2,15 @@
 session_start();
 
 $_SESSION["username"] = "Muhammad Nabeel";
+
+//Delete just one session
+// unset($_SESSION["username"]);
+
+//Delete all sessions
+// session_unset();
+
+//Destroy sessions
+session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">
