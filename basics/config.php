@@ -12,3 +12,7 @@ session_set_cookie_params([
     'secure' => true,
     'httponly' => true,
 ]);
+
+//Starting the session
+session_start();
+
