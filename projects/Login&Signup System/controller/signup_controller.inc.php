@@ -15,10 +15,10 @@ function is_input_empty(string $username,string $password,string $email){
 
 //Check the validation of the email
 function is_email_valid(string $email){
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-    return true;
-    } else{
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
     return false;
+    } else{
+    return true;
     }
 }
 

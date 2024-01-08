@@ -13,13 +13,29 @@ if($_SERVER ["REQUEST_METHOD"] == "POST") {
         require_once '../controller/signup_controller.inc.php';
 
          //Error Handler
-         if(is_input_empty($username, $password, $email)){
+         $errors = [];
 
+         if(is_input_empty($username, $password, $email)){
+            $errors["empty_input"] = "Fill in all fields!";
          }
          if(is_email_valid($email)){
+            $errors["invalid_email"] = "Invalid Email is used";
          }
-         if(get_username($pdo, $username)){
-        }      
+         if(is_username_taken($pdo, $username)){
+            $errors["username_taken"] = "Username is already taken!";
+        } 
+        if(is_email_registered($pdo, $email)){
+            $errors["email_used"] = "Email already registered!";
+        }    
+        //Link to config file for start the session
+        require_once 'config_session.inc.php';
+        header("Location: ../index.php");
+
+        if($errors){
+            $_SESSION["errors_signup"] = $errors;
+        }
+        
+        
     } catch (PDOException $e) {
         echo "Query Failed:  " . $e->getMessage();
     }

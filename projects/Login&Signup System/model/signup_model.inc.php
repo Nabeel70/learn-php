@@ -20,7 +20,7 @@ function get_username(object $pdo, string $username)
 
 function get_email(object $pdo, string $email)
 {
-    $query = "SELECT email FROM users WHERE email = :email;";
+    $query = "SELECT username FROM users WHERE email = :email;";
     $stmt = $pdo -> prepare($query);
     $stmt->bindParam(":email", $email);
     $stmt->execute();
