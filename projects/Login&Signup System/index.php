@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login&Signup System in PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h3 class="login">Login</h3>
+    <h3 class="login">Login</h3><br>
 
     <form action="includes/login.inc.php" method="post">
         <input type="text" name="username" placeholder="Username">
@@ -21,7 +21,7 @@
     <input type="text" name="username" placeholder="Username">
      <input type="password" name="pwd" placeholder="Password">
     <input type="text" name="email" placeholder="Email">
-    <button class="btn-signup">Login</button>
+    <button class="btn-signup">Signup</button>
 </form>
    
 </body>
