@@ -9,10 +9,10 @@ if($_SERVER ["REQUEST_METHOD"] == "POST") {
 
         require_once 'dbh.inc.php';
         require_once '../model/signup_model.inc.php';
-        // require_once '../view/signup_view.inc.php';
+        require_once '../view/signup_view.inc.php';
         require_once '../controller/signup_controller.inc.php';
 
-         //Error Handler
+         //Error Handlers
          $errors = [];
 
          if(is_input_empty($username, $password, $email)){
