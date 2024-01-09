@@ -10,7 +10,7 @@ function check_signup_errors(){
         echo "<br>";
 
         foreach($errors as $error) {
-            echo "<p>".$error."</p>";
+            echo "<h5>".$error."</h5>";
         }
 
         unset($_SESSION['errors_signup']);
