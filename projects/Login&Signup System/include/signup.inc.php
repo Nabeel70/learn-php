@@ -35,9 +35,7 @@ if($_SERVER ["REQUEST_METHOD"] == "POST") {
             $_SESSION["errors_signup"] = $errors;
             header("Location: ../index.php");
             die();
-        }
-        
-        
+        }      
     } catch (PDOException $e) {
         echo "Query Failed:  " . $e->getMessage();
     }
