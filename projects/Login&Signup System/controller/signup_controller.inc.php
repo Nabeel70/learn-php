@@ -41,3 +41,9 @@ function is_email_registered(object $pdo, string $email)
         return false;
     }
 }
+
+//Create the user inside db if there's no error
+function create_user(object $pdo, string $password, string $username, string $email)
+{
+   set_user($pdo, $password, $username, $email);
+}
