@@ -36,8 +36,8 @@ function is_username_taken(object $pdo, string $username)
 function is_email_registered(object $pdo, string $email)
 {
     if(get_email($pdo, $email)){
-    return true;
+        return true;
     } else{
-    return false;
+        return false;
     }
 }
