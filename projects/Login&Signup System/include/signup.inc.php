@@ -19,10 +19,10 @@ if($_SERVER ["REQUEST_METHOD"] == "POST") {
             $errors["empty_input"] = "Fill in all fields!";
          }
          if(is_email_invalid($email)){
-            $errors["invalid_email"] = "Invalid Email is used";
+            $errors["invalid_email"] = "Oops!.. Invalid Email is used";
          }
          if(is_username_taken($pdo, $username)){
-            $errors["username_taken"] = "Username is already taken!";
+            $errors["username_taken"] = "Username is already taken, Please try with different one!";
         } 
         if(is_email_registered($pdo, $email)){
             $errors["email_used"] = "Email already registered!";
