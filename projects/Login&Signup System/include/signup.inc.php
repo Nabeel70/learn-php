@@ -25,7 +25,7 @@ if($_SERVER ["REQUEST_METHOD"] == "POST") {
             $errors["username_taken"] = "Username is already taken, Please try with different one!";
         } 
         if(is_email_registered($pdo, $email)){
-            $errors["email_used"] = "Email already registered!";
+            $errors["email_used"] = "This Email already registered! Please Try to login";
         }    
         //Link to config file for start the session
         require_once 'config_session.inc.php';
