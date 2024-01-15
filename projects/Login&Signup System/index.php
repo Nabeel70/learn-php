@@ -22,9 +22,9 @@
     <h3 class="login">Signup</h3>
 
 <form action="./include/signup.inc.php" method="post">
-    <input type="text" name="username" placeholder="Username">
-     <input type="password" name="pwd" placeholder="Password">
-    <input type="text" name="email" placeholder="Email">
+    <?php
+    signup_inputs();
+    ?>
     <button class="btn-signup">Signup</button>
 </form>
    
