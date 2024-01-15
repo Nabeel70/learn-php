@@ -3,6 +3,19 @@
 
 declare(strict_types=1);
 
+function signup_inputs() {
+
+    <input type="text" name="username" placeholder="Username">
+     <input type="password" name="pwd" placeholder="Password">
+    <input type="text" name="email" placeholder="Email">
+    <button class="btn-signup">Signup</button>
+
+    if(isset($_SESSION["signup_data"]["username"]) &&
+     isset($_SESSION["errors_signup"]["username_taken"]){
+
+    }
+}
+
 function check_signup_errors(){
     if(isset($_SESSION['errors_signup'])){
         $errors = $_SESSION['errors_signup'];
