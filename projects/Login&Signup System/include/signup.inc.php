@@ -37,6 +37,7 @@ if($_SERVER ["REQUEST_METHOD"] == "POST") {
             die();
         } 
         
+        //User Created to send data to database
         create_user($pdo,$password, $username, $email);
 
         header("Location: ../index.php?signup=success");
