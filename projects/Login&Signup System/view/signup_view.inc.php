@@ -3,6 +3,7 @@
 
 declare(strict_types=1);
 
+//Keeping the form data if user make an error 
 function signup_inputs() {
 
     if(isset($_SESSION["signup_data"]["username"]) &&
