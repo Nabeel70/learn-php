@@ -37,6 +37,11 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
              die();
          } 
 
+         //Create new session id for user to append user id with it for security
+         $newSessionId = session_create_id();
+         $sessionId = $newSessionId. "_".$result["id"];
+         session_id($sessionId);
+
     } catch (PDOException $e) {
         echo "Query Failed:  " . $e->getMessage();
     }
