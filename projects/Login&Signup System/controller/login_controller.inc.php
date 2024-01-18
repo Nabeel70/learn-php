@@ -10,3 +10,12 @@ function is_username_wrong(bool|array $result)
         return false;
     }
 }
+
+function is_password_wrong(string $password, string $hashPassword) 
+{
+    if(!password_verify($password, $hashPassword)){
+        return true;
+    }else{
+        return false;
+    }
+}
