@@ -25,11 +25,11 @@ function regenrate_session_id(){
 
 if(isset($_SESSION['user_id'])) {
     if(!isset($_SESSION['last_regeneration'])){
-        regenrate_session_id_loggedin();
+        // regenrate_session_id_loggedin();
     } else{
         $interval = 60 * 30;
         if( time() - $_SESSION['last_regeneration'] >= $interval){
-            regenrate_session_id_loggedin();
+            // regenrate_session_id_loggedin();
         }
     }
 
