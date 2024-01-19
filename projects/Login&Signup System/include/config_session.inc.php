@@ -20,7 +20,11 @@ function regenrate_session_id(){
     $_SESSION['last_regeneration'] = time();
 }
 
+//Create a function for regenrate session id when user logged in
+function regenrate_session_id_loggedin (){
+    session_regenerate_id(true);
 
+}
 
 
 if(isset($_SESSION['user_id'])) {
