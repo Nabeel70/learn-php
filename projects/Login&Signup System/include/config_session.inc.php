@@ -24,6 +24,11 @@ function regenrate_session_id(){
 function regenrate_session_id_loggedin (){
     session_regenerate_id(true);
 
+    $userId = $_SESSION['user_id'];
+    $newSessionId = session_create_id();
+    $sessionId = $newSessionId. "_".$userId;
+    session_id($sessionId);
+    $_SESSION['last_regeneration'] = time();
 }
 
 
