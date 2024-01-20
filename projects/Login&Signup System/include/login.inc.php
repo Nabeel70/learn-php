@@ -46,8 +46,11 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
          $_SESSION["user_username"] = htmlspecialchars($result["username"]);
 
          $_SESSION['last_regeneration'] = time();
-         
+
          header("Location: ../index.php?login=success");
+         //close the connection
+         $pdo = null;
+         $stmt = null;
 
     } catch (PDOException $e) {
         echo "Query Failed:  " . $e->getMessage();
