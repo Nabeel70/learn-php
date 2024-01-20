@@ -19,6 +19,11 @@
         <button class="btn-signup">Login</button>
     </form>
 
+    <?php
+    check_login_errors();
+    
+    ?>
+
     <h3 class="login">Signup</h3>
 
 <form action="./include/signup.inc.php" method="post">
