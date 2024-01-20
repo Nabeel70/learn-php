@@ -52,6 +52,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
          $pdo = null;
          $stmt = null;
 
+         die();
     } catch (PDOException $e) {
         echo "Query Failed:  " . $e->getMessage();
     }
