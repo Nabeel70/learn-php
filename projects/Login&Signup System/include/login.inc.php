@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
          session_id($sessionId);
 
          $_SESSION["user_id"] = $result["id"];
-         $_SESSION["user_username"] =  $result["username"];
+         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
 
     } catch (PDOException $e) {
         echo "Query Failed:  " . $e->getMessage();
