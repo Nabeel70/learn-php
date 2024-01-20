@@ -28,6 +28,7 @@ function regenrate_session_id_loggedin (){
     $newSessionId = session_create_id();
     $sessionId = $newSessionId. "_".$userId;
     session_id($sessionId);
+    
     $_SESSION['last_regeneration'] = time();
 }
 
