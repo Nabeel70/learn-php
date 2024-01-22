@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
         
  
          if($errors){
-             $_SESSION["errors_signup"] = $errors;             
+             $_SESSION["errors_login"] = $errors;             
  
              header("Location: ../index.php");
              die();
@@ -60,8 +60,8 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
 
 
 }else {
-  echo"Something Wrong";
-    // header("Location: ../index.php");
+  // echo"Something Wrong";
+    header("Location: ../index.php");
     die();
 }
 ?>
