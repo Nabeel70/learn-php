@@ -60,7 +60,8 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
 
 
 }else {
-    header("Location: ../index.php");
+  echo"Something Wrong";
+    // header("Location: ../index.php");
     die();
 }
 ?>
