@@ -2,7 +2,7 @@
 
 declare(strict_types= 1);
 
-function is_input_empty(string $password, string $username) 
+function is_input_empty( string $username, string $password) 
 {
     if(empty($username) || empty($password)){
         return true;
