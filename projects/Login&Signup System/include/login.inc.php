@@ -18,11 +18,11 @@ if($_SERVER  ["REQUEST_METHOD"] == "POST"){
           $result = get_user($pdo, $username);
          
           if(is_username_wrong($result)) {
-            $errors["login_incorrect"] = "Incorrect login info!";
+            $errors["login_incorrect"] = "Incorrect Username!";
           }
 
           if(!is_username_wrong($result) && is_password_wrong($password, $result["pwd"])) {
-            $errors["login_incorrect"] = "Incorrect login info!";
+            $errors["login_incorrect"] = "Incorrect Password!";
           }
 
 
