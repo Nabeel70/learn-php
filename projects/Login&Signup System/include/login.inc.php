@@ -1,6 +1,6 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] == 'post') {
+if($_SERVER  ["REQUEST_METHOD"] == "POST"){
     $username = $_POST["username"];
     $password = $_POST["pwd"];
     try {
@@ -60,8 +60,9 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
 
 
 }else {
-  // echo"Something Wrong";
-    header("Location: ../index.php");
-    die();
+  echo"Something Wrong";
+
+    // header("Location: ../index.php");
+    die(); 
 }
 ?>
