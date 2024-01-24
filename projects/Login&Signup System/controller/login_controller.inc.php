@@ -20,9 +20,9 @@ function is_username_wrong(bool|array $result)
     }
 }
 
-function is_password_wrong(string $password, string $hashedPwd) 
+function is_password_wrong(string $password, string $hashedpwd) 
 {
-    if(!password_verify($password, $hashedPwd)){
+    if(!password_verify($password, $hashedpwd)){
         return true;
     }else{
         return false;
