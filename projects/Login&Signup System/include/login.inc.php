@@ -16,14 +16,21 @@ if($_SERVER  ["REQUEST_METHOD"] == "POST"){
              $errors["empty_input"] = "Fill in all fields!";
           }
           $result = get_user($pdo, $username);
-         
-          if(is_username_wrong($result)) {
-            $errors["login_incorrect"] = "Incorrect Username!";
-          }
 
-          if(is_password_wrong($password, $result["pwd"])) {
+          
+          if (is_username_wrong($result)) {
+            $errors["login_incorrect"] = "Incorrect Username!";
+        } elseif (!password_verify($password, $result["pwd"])) {
             $errors["login_incorrect"] = "Incorrect Password!";
-          }
+        }
+         
+          // if(is_username_wrong($result)) {
+          //   $errors["login_incorrect"] = "Incorrect Username!";
+          // }
+
+          // if(is_password_wrong($password, $result["pwd"])) {
+          //   $errors["login_incorrect"] = "Incorrect Password!";
+          // }
 
 
          //Link to config file for start the session

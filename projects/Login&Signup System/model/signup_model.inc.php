@@ -31,7 +31,7 @@ function get_email(object $pdo, string $email)
 
 //Setup the user to insert signup data into db
 function set_user(object $pdo, string $password, string $username, string $email){
-    $query = "INSERT INTO users (username, email, pwd) VALUES 
+    $query = "INSERT INTO users (username, pwd, email) VALUES 
     (:username, :pwd, :email);";
     $stmt = $pdo->prepare($query);
 
