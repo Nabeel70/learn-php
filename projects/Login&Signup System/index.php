@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+
+    <h3>
+        <?php
+        output_username();
+        ?>
+    </h3>
     <h3 class="login">Login</h3><br>
 
     <form action="./include/login.inc.php" method="post">
