@@ -37,5 +37,14 @@
 <?php
 check_signup_errors();
 ?>
+
+
+<h3 class="login">Logout</h3><br>
+
+<form action="./include/logout.inc.php" method="post">
+    <button class="btn-signup">Logout</button>
+</form>
+
+
 </body>
 </html>
