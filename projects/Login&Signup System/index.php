@@ -29,7 +29,7 @@
          <input type="password" name="pwd" placeholder="Password">
         <button class="btn-signup">Login</button>
     </form>
-    
+
   <?php  } 
     ?>
    
@@ -39,7 +39,9 @@
     
     ?>
 
-    <h3 class="login">Signup</h3>
+<?php
+      if(!isset($_SESSION["user_id"])) {?>
+        <h3 class="login">Signup</h3>
 
 <form action="./include/signup.inc.php" method="post">
     <?php
@@ -47,6 +49,10 @@
     ?>
     <button class="btn-signup">Signup</button>
 </form>
+    
+  <?php  } 
+    ?>
+   
    
 <?php
 check_signup_errors();
