@@ -59,12 +59,18 @@ check_signup_errors();
 ?>
 
 
-<h3 class="login">Logout</h3><br>
+<?php
+if(isset($_SESSION['user_id'])){?>
+   
+    <h3 class="login">Logout</h3><br>
 
 <form action="./include/logout.inc.php" method="post">
     <button class="btn-signup">Logout</button>
 </form>
 
+<?php }
+?>
+ 
 
 </body>
 </html>
