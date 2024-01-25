@@ -19,13 +19,20 @@
         output_username();
         ?>
     </h3>
-    <h3 class="login">Login</h3><br>
+
+    <?php
+      if(!isset($_SESSION["user_id"])) {?>
+        <h3 class="login">Login</h3><br>
 
     <form action="./include/login.inc.php" method="post">
         <input type="text" name="username" placeholder="Username">
          <input type="password" name="pwd" placeholder="Password">
         <button class="btn-signup">Login</button>
     </form>
+    
+  <?php  } 
+    ?>
+   
 
     <?php
     check_login_errors();
